@@ -180,6 +180,9 @@ img {
 	.WorkDate {
 		font-size: 14px;
 	}
+	.WorkRole {
+		font-size: 16px;
+	}
 	.desktop {
 		display: none;
 	}
