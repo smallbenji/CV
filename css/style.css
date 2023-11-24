@@ -22,7 +22,11 @@ a {
 	color: white;
 }
 
-img {
+.linkedin {
+	color: #0059ff;
+}
+
+.pfp {
 	border-radius: 50%;
 	object-fit: cover;
 	height: 250px;
