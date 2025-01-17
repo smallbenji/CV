@@ -69,7 +69,7 @@ a {
 .HeaderText {
 	font-size: 48px;
 	margin-bottom: 0px;
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	font-family: "Lato";
 }
 
