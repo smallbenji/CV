@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleV2.css" />
+    <title>CV | smallbenji</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img alt="Billede af Benjamin" src="./assets/Per.jpg" class="sidebar-pfp" />
+        <div class="sidebar-section">
+            <h2>Kontakt</h2>
+            <p>
+                <i class="bi bi-telephone"></i> 25755838
+            </p>
+            <p>
+                <i class="bi bi-envelope"></i> <a href="mailto:benjaminkfalch@gmail.com">benjaminkfalch@gmail.com</a>
+            </p>
+            <p>
+                <i class="bi bi-geo-alt"></i> Fyn, Danmark
+            </p>
+        </div>
+        <div class="sidebar-section">
+            <h2>Uddannelse</h2>
+            <div class="sidebar-education">
+                <p>2023</p>
+                <b>
+                    <p>Syddansk Erhversskole</p>
+                </b>
+                <p>Uddannelse</p>
+            </div>
+            <div class="sidebar-education">
+                <p>2022</p>
+                <b>
+                    <p>Askov Efterskole</p>
+                </b>
+                <p>Efterskole</p>
+            </div>
+            <div class="sidebar-education">
+                <p>2021</p>
+                <b>
+                    <p>Nordagerskolen</p>
+                </b>
+                <p>Folkeskole</p>
+            </div>
+        </div>
+        <div class="sidebar-section">
+            <h2>Ekspertise</h2>
+            <p>Web-development</p>
+            <p>POS-systemer</p>
+            <p>IT-support</p>
+            <p>Systemudvikling</p>
+            <p>Programmering</p>
+        </div>
+        <div class="sidebar-section">
+            <h2>Sprog</h2>
+            <p>Dansk</p>
+            <p>Engelsk</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-name-box">
+            <h1>Benjamin Falch</h1>
+        </div>
+        <div class="content-gridbox">
+            <div class="card about-me">
+                <div class="card-header">
+                    <p><i class="bi bi-person"></i> Om mig</p>
+                </div>
+                <div class="card-body">
+                    Jeg er en 19-årig freelance programmør som ikke er bange for at arbejde, som spejder og IT-supporter er jeg en dreng som er ekstrovert med passion for teknologi og systemudvikling. Jeg har gå på mode og en team-player, og er ikke bange for at få beskidte fingre.
+                </div>
+            </div>
+            <div class="card experience">
+                <div class="card-header">
+                    <p><i class="bi bi-folder-fill"></i> Erfaringer</p>
+                </div>
+                <div id="chainbox" class="card-item">
+                    <div class="card-item-content">
+                        <div class="status success pulse">
+
+                        </div>
+                        <div>
+                            <h3>Chainbox ApS <span class="work-desc">- Programmør lærling</span></h3>
+                            Aug 2024 - Present
+                        </div>
+                        <div class="flex"></div>
+                        <div>
+                            <i class="bi bi-caret-down-fill" onclick="toggleDropdown('chainbox')"></i>
+                        </div>
+                    </div>
+                    <div class="card-item-dropdown">
+                        Beskrivelse på vej...
+                    </div>
+                </div>
+                <div id="expert" class="card-item">
+                    <div class="card-item-content">
+                        <div class="status danger"></div>
+                        <div>
+                            <h3>Expert & Punkt 1 Ringe <span class="work-desc">- Tekniker</span></h3>
+                            Aug 2021 - Aug 2024
+                        </div>
+                        <div class="flex"></div>
+                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('expert')"></i></div>
+                    </div>
+                    <div class="card-item-dropdown">
+                        Jeg arbejder med opsætning af nye computere, salg af computere, general opsætning af systemer, heriblandt videovæg og elektroniske reklame skilte. Udfører service på computere og servere. Opbygger IT-systemer til firmaer. Roder med en god blanding af forskellig hardware, alt fra printere til blendere. Expert og Punkt 1 Ringe giver mig mulighed for at udvide min horisont indenfor IT verdenen.
+                    </div>
+                </div>
+                <div id="advokatfyn" class="card-item">
+                    <div class="card-item-content">
+                        <div class="status danger"></div>
+                        <div>
+                            <h3>Advokat Fyn <span class="work-desc">- Ad hoc medarbejder</span></h3>
+                            Feb 2021 - Feb 2022
+                        </div>
+                        <div class="flex"></div>
+                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('advokatfyn')"></i></div>
+                    </div>
+                    <div class="card-item-dropdown">
+                        <b>Arbejdet bestod blandt andet af:</b> <br />
+                        Sortering af sager, <br />
+                        Mærkulering af sager <br />
+                        Bybud <br />
+                        Postering <br />
+                        Opsætning af computer systemer <br />
+                        Og meget mere
+                    </div>
+                </div>
+            </div>
+            <div class="card projects">
+                <div class="card-header">
+                    <p><i class="bi bi-magic"></i> Projekter</p>
+                </div>
+                <div class="card-item">
+                    <div class="card-item-content">
+                        <div class="status danger"></div>
+                        <div>
+                            <h3>Spejdernes Lejr <span class="work-desc">- Teamleder for AOE IT</span></h3>
+                            2025
+                        </div>
+                        <div class="flex"></div>
+                        <div><i class="bi bi-caret-down-fill"></i></div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-item-content">
+                        <div class="status danger"></div>
+                        <div>
+                            <h3>Spejdernes Lejr <span class="work-desc">- Teamleder for AOE IT</span></h3>
+                            2025
+                        </div>
+                        <div class="flex"></div>
+                        <div><i class="bi bi-caret-down-fill"></i></div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-item-content">
+                        <div class="status danger"></div>
+                        <div>
+                            <h3>Spejdernes Lejr <span class="work-desc">- Teamleder for AOE IT</span></h3>
+                            2025
+                        </div>
+                        <div class="flex"></div>
+                        <div><i class="bi bi-caret-down-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDropdown(id) {
+            document.getElementById(id).classList.toggle("dropdown-shown");
+        }
+    </script>
+</body>
+
+</html>
