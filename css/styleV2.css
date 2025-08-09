@@ -143,6 +143,7 @@ body {
 }
 
 .card .card-item i {
+    cursor: pointer;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -240,4 +241,51 @@ body {
 
 .work-desc {
     color: rgba(0, 0, 0, 0.6);
+}
+
+.status-card {
+    grid-area: empty;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.status-item .status-name {
+    font-weight: 500;
+    flex: 1;
+}
+
+.status-item .status-uptime {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #dc3545;
 }
