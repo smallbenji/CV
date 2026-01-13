@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div class="card-item-dropdown">
-                        Beskrivelse på vej...
+                        Som programmør lærling hos Chainbox arbejder jeg med forskellige teknologier og frameworks, jeg arbejder med MVC, Vue og sass. Heribland yder jeg support til vores kunder.Som programmør lærling hos Chainbox arbejder jeg med forskellige teknologier og frameworks, jeg arbejder med MVC, Vue og sass. Heribland yder jeg support til vores kunder.
                     </div>
                 </div>
                 <div id="expert" class="card-item">
@@ -201,6 +201,15 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header"><p><i class="bi bi-chat-fill"></i> Socials</p></div>
+                <div class="card-body">
+                    <ul>
+                        <li><a href="https://github.com/smallbenji">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/smallbenji">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -214,7 +223,7 @@
             
             try {
                 // Uptime Kuma API endpoint for monitor status
-                const response = await fetch('https://uptime.smallbenji.tech/api/status-page/smallhosting');
+                const response = await fetch('http://localhost:3000/status');
                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch status data');
@@ -232,28 +241,38 @@
         function displayStatusData(data) {
             const statusContent = document.getElementById('status-content');
             
-            if (!data.publicGroupList || data.publicGroupList.length === 0) {
+            if (!data || data.length === 0) {
                 statusContent.innerHTML = '<div class="status-error">No monitors found</div>';
                 return;
             }
             
             let html = '<div class="status-grid">';
             
-            data.publicGroupList.forEach(group => {
-                if (group.monitorList) {
-                    group.monitorList.forEach(monitor => {
-                        const status = monitor.status === 1 ? 'success' : 'danger';
-                        const uptime = monitor.uptime ? (monitor.uptime * 100).toFixed(1) : '0.0';
+            // data.forEach(group => {
+            //     if (group) {
+            //         group.forEach(monitor => {
+            //             const status = monitor.up ? 'success' : 'danger';
                         
-                        html += `
-                            <div class="status-item">
-                                <div class="status ${status}"></div>
-                                <div class="status-name">${monitor.name}</div>
-                                <div class="status-uptime">${uptime}%</div>
-                            </div>
-                        `;
-                    });
-                }
+            //             html += `
+            //                 <div class="status-item">
+            //                     <div class="status ${status}"></div>
+            //                     <div class="status-name">${monitor.name}</div>
+            //                 </div>
+            //             `;
+            //         });
+            //     }
+            // });
+
+            data.forEach(site => {
+                const status = site.up ? 'success' : 'danger';
+
+                html += `
+                    <div class="status-item">
+                        <div class="status ${status}"></div>
+                        <div class="status-name">${site.site}</div>
+                    </div>
+                `;
+                
             });
             
             html += '</div>';
