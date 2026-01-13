@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 
-app.get("/status", async (req, res) => {
+app.get("/api/status", async (req, res) => {
     try {
         const query = "probe_success{job=\"blackbox\"}";
         const url = `${PROM_URL}/api/v1/query?query=${encodeURIComponent(query)}`;
