@@ -20,6 +20,9 @@ app.get("/status", async (req, res) => {
         const result = [];
         for (const item of data.data.result) {
             const target = item.metric.instance || "unknown";
+
+            if (target == "https://mail.smallbenji.tech") continue;
+
             result.push({
                 site: target,
                 up: item.value[1] === "1" ? true : false
