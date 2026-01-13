@@ -223,7 +223,7 @@
             
             try {
                 // Uptime Kuma API endpoint for monitor status
-                const response = await fetch('http://localhost:3000/status');
+                const response = await fetch('/api/status');
                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch status data');
