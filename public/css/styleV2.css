@@ -1,12 +1,52 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
 
+:root {
+    color-scheme: light dark;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     min-height: 100vh;
     padding: 0;
     margin: 0;
+}
+@media(prefers-color-scheme: dark) {
+	body {
+		background-color: #111;
+		background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+		background-size: 60px 60px;
+		background-position: center center;
+	}
+
+	body .card {
+		background-color: #222;
+		border: 1px solid #333;
+	}
+
+	body .card .card-header {
+		background-color: #333;
+	}
+
+	.card .work-desc {
+		color: rgba(255,255,255,0.6)
+	}
+
+	.sidebar {
+		background-color: #222;
+	}
+
+	body .content-name-box {
+		background-color: #222;
+	}
+
+	body .card .card-header i {
+		color: rgba(255,255,255,0.8);
+	}
+
+	body .sidebar-section h2 {
+		color: rgba(255,255,255,0.7);
+	}
 }
 
 .sidebar {
