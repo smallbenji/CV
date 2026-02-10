@@ -14,8 +14,12 @@ body {
 @media(prefers-color-scheme: dark) {
 	body {
 		background-color: #111;
-		background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-		background-size: 60px 60px;
+		background-image:
+		linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+		linear-gradient(45deg, transparent 49.5%, rgba(255,255,255,0.05) 49.5%, rgba(255,255,255,0.05) 50.5%, transparent 50.5%),
+		linear-gradient(135deg, transparent 49.5%, rgba(255,255,255,0.05) 49.5%, rgba(255,255,255,0.05) 50.5%, transparent 50.5%);
+		background-size: 60px 60px, 60px 60px;
 		background-position: center center;
 	}
 
@@ -46,6 +50,15 @@ body {
 
 	body .sidebar-section h2 {
 		color: rgba(255,255,255,0.7);
+	}
+
+	body .status-item {
+		border: 1px solid #333;
+		color: rgba(255,255,255,0.6);
+	}
+
+	.status-name {
+		color: rgba(255,255,255,1);
 	}
 }
 
