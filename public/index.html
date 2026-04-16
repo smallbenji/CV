@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/styleV2.css?v=CACHE_BUST" />
     <title>CV | smallbenji</title>
 </head>
-<body> <div class="sidebar">
+
+<body>
+    <div class="sidebar">
         <img alt="Billede af Benjamin" src="./assets/Per.webp" class="sidebar-pfp" />
         <div class="sidebar-section">
             <h2>Kontakt</h2>
@@ -236,7 +238,7 @@
             
             try {
                 // Uptime Kuma API endpoint for monitor status
-                const response = await fetch('http://localhost:3000/api/status');
+                const response = await fetch('/api/status');
                 
                 if (!response.ok) {
                     throw new Error('Failed to fetch status data');
