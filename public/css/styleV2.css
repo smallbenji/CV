@@ -148,6 +148,29 @@ body {
     grid-template-columns: 50% 1fr;
 }
 
+.content-halfs {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+@media (max-width: 640px) {
+    .content-halfs {
+        flex-direction: column;
+    }
+
+    body .half {
+        width: 100%;
+    }
+}
+
+.half {
+    width: 50%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 5px;

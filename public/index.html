@@ -66,167 +66,193 @@
         <div class="content-name-box">
             <h1>Benjamin Falch</h1>
         </div>
-        <div class="content-gridbox">
-            <div class="card about-me">
-                <div class="card-header">
-                    <p><i class="bi bi-person"></i> Om mig</p>
+        <div class="content-halfs">
+            <div class="half">
+                <div class="card about-me">
+                    <div class="card-header">
+                        <p><i class="bi bi-person"></i> Om mig</p>
+                    </div>
+                    <div class="card-body">
+                        Jeg er en 20-årig freelance programmør som ikke er bange for at arbejde, som spejder og
+                        IT-supporter er jeg en dreng som er ekstrovert med passion for teknologi og systemudvikling. Jeg
+                        har gå på mode og en team-player, og er ikke bange for at få beskidte fingre.
+                    </div>
                 </div>
-                <div class="card-body">
-                    Jeg er en 20-årig freelance programmør som ikke er bange for at arbejde, som spejder og IT-supporter er jeg en dreng som er ekstrovert med passion for teknologi og systemudvikling. Jeg har gå på mode og en team-player, og er ikke bange for at få beskidte fingre.
-                </div>
-            </div>
-            <div class="card status-card">
-                <div class="card-header">
-                    <p><i class="bi bi-activity"></i> System Status</p>
-                </div>
-                <div id="status-content" class="status-loading">
-                    <i class="bi bi-arrow-clockwise"></i> Loading status...
-                </div>
-            </div>
-            <div class="card experience">
-                <div class="card-header">
-                    <p><i class="bi bi-folder-fill"></i> Erfaringer</p>
-                </div>
-                <div id="chainbox" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status success pulse">
 
+                <div class="card experience">
+                    <div class="card-header">
+                        <p><i class="bi bi-folder-fill"></i> Erfaringer</p>
+                    </div>
+                    <div id="chainbox" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status success pulse">
+
+                            </div>
+                            <div>
+                                <h3>Chainbox ApS <span class="work-desc">- Programmør lærling</span></h3>
+                                Aug 2024 - Present
+                            </div>
+                            <div class="flex"></div>
+                            <div>
+                                <i class="bi bi-caret-down-fill" onclick="toggleDropdown('chainbox')"></i>
+                            </div>
                         </div>
-                        <div>
-                            <h3>Chainbox ApS <span class="work-desc">- Programmør lærling</span></h3>
-                            Aug 2024 - Present
-                        </div>
-                        <div class="flex"></div>
-                        <div>
-                            <i class="bi bi-caret-down-fill" onclick="toggleDropdown('chainbox')"></i>
+                        <div class="card-item-dropdown">
+                            Som programmør lærling hos Chainbox arbejder jeg med forskellige teknologier og frameworks,
+                            jeg arbejder med MVC, Vue og sass. Heriblandt indgår jeg i vores support afdeling, hvor vi
+                            yder 1st og 2nd level support til vores kunder. Desuden er jeg til tider også infrastruktur
+                            ansvarlig.
                         </div>
                     </div>
-                    <div class="card-item-dropdown">
-                        Som programmør lærling hos Chainbox arbejder jeg med forskellige teknologier og frameworks, jeg arbejder med MVC, Vue og sass. Heriblandt indgår jeg i vores support afdeling, hvor vi yder 1st og 2nd level support til vores kunder. Desuden er jeg til tider også infrastruktur ansvarlig.
+                    <div id="expert" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status danger"></div>
+                            <div>
+                                <h3>Expert & Punkt 1 Ringe <span class="work-desc">- Tekniker</span></h3>
+                                Aug 2021 - Aug 2024
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('expert')"></i></div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Jeg arbejder med opsætning af nye computere, salg af computere, general opsætning af
+                            systemer, heriblandt videovæg og elektroniske reklame skilte. Udfører service på computere
+                            og servere. Opbygger IT-systemer til firmaer. Roder med en god blanding af forskellig
+                            hardware, alt fra printere til blendere. Expert og Punkt 1 Ringe giver mig mulighed for at
+                            udvide min horisont indenfor IT verdenen.
+                        </div>
+                    </div>
+                    <div id="advokatfyn" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status danger"></div>
+                            <div>
+                                <h3>Advokat Fyn <span class="work-desc">- Ad hoc medarbejder</span></h3>
+                                Feb 2021 - Feb 2022
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('advokatfyn')"></i></div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            <b>Arbejdet bestod blandt andet af:</b> <br />
+                            Sortering af sager, <br />
+                            Mærkulering af sager <br />
+                            Bybud <br />
+                            Postering <br />
+                            Opsætning af computer systemer <br />
+                            Og meget mere
+                        </div>
                     </div>
                 </div>
-                <div id="expert" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status danger"></div>
-                        <div>
-                            <h3>Expert & Punkt 1 Ringe <span class="work-desc">- Tekniker</span></h3>
-                            Aug 2021 - Aug 2024
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('expert')"></i></div>
+                <div class="card">
+                    <div class="card-header">
+                        <p><i class="bi bi-chat-fill"></i> Socials</p>
                     </div>
-                    <div class="card-item-dropdown">
-                        Jeg arbejder med opsætning af nye computere, salg af computere, general opsætning af systemer, heriblandt videovæg og elektroniske reklame skilte. Udfører service på computere og servere. Opbygger IT-systemer til firmaer. Roder med en god blanding af forskellig hardware, alt fra printere til blendere. Expert og Punkt 1 Ringe giver mig mulighed for at udvide min horisont indenfor IT verdenen.
-                    </div>
-                </div>
-                <div id="advokatfyn" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status danger"></div>
-                        <div>
-                            <h3>Advokat Fyn <span class="work-desc">- Ad hoc medarbejder</span></h3>
-                            Feb 2021 - Feb 2022
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('advokatfyn')"></i></div>
-                    </div>
-                    <div class="card-item-dropdown">
-                        <b>Arbejdet bestod blandt andet af:</b> <br />
-                        Sortering af sager, <br />
-                        Mærkulering af sager <br />
-                        Bybud <br />
-                        Postering <br />
-                        Opsætning af computer systemer <br />
-                        Og meget mere
-                    </div>
-                </div>
-            </div>
-            <div class="card projects">
-                <div class="card-header">
-                    <p><i class="bi bi-magic"></i> Frivilligt arbejde</p>
-                </div>
-                <div id="sl26-aoe" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status success"></div>
-                        <div>
-                            <h3>Spejdernes Lejr 2026 <span class="work-desc">- Teamleder for AOE IT</span></h3>
-                            2025
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('sl26-aoe')"></i></div>
-                    </div>
-                    <div class="card-item-dropdown">
-                        Team Leder for Spejdernes Lejr AOE IT afdelingen, som primært står for aktivitets databasen og aktivitets tilmelding systemet.
-			Heriblandt laver jeg ordrer importer til vores lager system fra aktivitetsdatabasen og er infrastruktur ansvarlig.
-                    </div>
-                </div>
-		<div id="danehof-distrikt" class="card-item">
-			<div class="card-item-content">
-				<div class="status success"></div>
-				<div>
-					<h3>Danehof Distrikt <span class="work-desc">- Distrikt Assistent</span></h3>
-					2026
-				</div>
-				<div class="flex"></div>
-				<div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('danehof-distrikt')"></i></div>
-			</div>
-			<div class="card-item-dropdown">
-				Beskrivelse på vej...
-			</div>
-		</div>
-                <div id="linienudsyd-25" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status danger"></div>
-                        <div>
-                            <h3>Linien ud syd <span class="work-desc">- Ansvarlig for serviceteam</span></h3>
-                            2025
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('linienudsyd-25')"></i></div>
-                    </div>
-                    <div class="card-item-dropdown">
-                        Ansvarlig for administréring af serviceteam og uddeligering af opgaver
-                    </div>
-                </div>
-                <div id="fynsdistrikt" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status danger"></div>
-                        <div>
-                            <h3>Distriktssommerlejr 2024 <span class="work-desc">- Hjemmeside ansvarlig</span></h3>
-                            2024
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('fynsdistrikt')"></i></div>
-                    </div>
-                    <div class="card-item-dropdown">
-                        Ansvarlig for opbygning af tilmelding system til sommerlejr, som blandt andet indeholdte forhåndstilmelding, endelig tilmelding og aktivitetstilmelding.
-                        Her var 350+ spejdere igennem systemet
-                    </div>
-                </div>
-                <div id="sl22-supermarked" class="card-item">
-                    <div class="card-item-content">
-                        <div class="status danger"></div>
-                        <div>
-                            <h3>Spejdernes Lejr 2022 <span class="work-desc">- Tekniker for supermarked</span></h3>
-                            2022
-                        </div>
-                        <div class="flex"></div>
-                        <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('sl22-supermarked')"></i></div>
-                    </div>
-                    <div class="card-item-dropdown">
-                        Stod for indscanning af varer i vores POS system
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="https://github.com/smallbenji">GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/smallbenji">LinkedIn</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header"><p><i class="bi bi-chat-fill"></i> Socials</p></div>
-                <div class="card-body">
-                    <ul>
-                        <li><a href="https://github.com/smallbenji">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/smallbenji">LinkedIn</a></li>
-                    </ul>
+            <div class="half">
+                <div class="card status-card">
+                    <div class="card-header">
+                        <p><i class="bi bi-activity"></i> System Status</p>
+                    </div>
+                    <div id="status-content" class="status-loading">
+                        <i class="bi bi-arrow-clockwise"></i> Loading status...
+                    </div>
+                </div>
+                <div class="card projects">
+                    <div class="card-header">
+                        <p><i class="bi bi-magic"></i> Frivilligt arbejde</p>
+                    </div>
+                    <div id="sl26-aoe" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status success"></div>
+                            <div>
+                                <h3>Spejdernes Lejr 2026 <span class="work-desc">- Teamleder for AOE IT</span></h3>
+                                2025
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('sl26-aoe')"></i></div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Team Leder for Spejdernes Lejr AOE IT afdelingen, som primært står for aktivitets databasen
+                            og aktivitets tilmelding systemet.
+                            Heriblandt laver jeg ordrer importer til vores lager system fra aktivitetsdatabasen og er
+                            infrastruktur ansvarlig.
+                        </div>
+                    </div>
+                    <div id="danehof-distrikt" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status success"></div>
+                            <div>
+                                <h3>Danehof Distrikt <span class="work-desc">- Distrikt Assistent</span></h3>
+                                2026
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('danehof-distrikt')"></i>
+                            </div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Beskrivelse på vej...
+                        </div>
+                    </div>
+                    <div id="linienudsyd-25" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status danger"></div>
+                            <div>
+                                <h3>Linien ud syd <span class="work-desc">- Ansvarlig for serviceteam</span></h3>
+                                2025
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('linienudsyd-25')"></i></div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Ansvarlig for administréring af serviceteam og uddeligering af opgaver
+                        </div>
+                    </div>
+                    <div id="fynsdistrikt" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status danger"></div>
+                            <div>
+                                <h3>Distriktssommerlejr 2024 <span class="work-desc">- Hjemmeside ansvarlig</span></h3>
+                                2024
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('fynsdistrikt')"></i></div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Ansvarlig for opbygning af tilmelding system til sommerlejr, som blandt andet indeholdte
+                            forhåndstilmelding, endelig tilmelding og aktivitetstilmelding.
+                            Her var 350+ spejdere igennem systemet
+                        </div>
+                    </div>
+                    <div id="sl22-supermarked" class="card-item">
+                        <div class="card-item-content">
+                            <div class="status danger"></div>
+                            <div>
+                                <h3>Spejdernes Lejr 2022 <span class="work-desc">- Tekniker for supermarked</span></h3>
+                                2022
+                            </div>
+                            <div class="flex"></div>
+                            <div><i class="bi bi-caret-down-fill" onclick="toggleDropdown('sl22-supermarked')"></i>
+                            </div>
+                        </div>
+                        <div class="card-item-dropdown">
+                            Stod for indscanning af varer i vores POS system
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="content-gridbox">
+
+            
+            
+        </div> -->
     </div>
     <script>
         function toggleDropdown(id) {
@@ -236,18 +262,18 @@
         // Fetch status data from Uptime Kuma
         async function fetchStatusData() {
             const statusContent = document.getElementById('status-content');
-            
+
             try {
                 // Uptime Kuma API endpoint for monitor status
                 const response = await fetch('/api/status');
-                
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch status data');
                 }
-                
+
                 const data = await response.json();
                 displayStatusData(data);
-                
+
             } catch (error) {
                 console.error('Error fetching status data:', error);
                 statusContent.innerHTML = '<div class="status-error"><i class="bi bi-exclamation-triangle" style="padding-right: 5px;"></i> Failed to load status</div>';
@@ -256,19 +282,19 @@
 
         function displayStatusData(data) {
             const statusContent = document.getElementById('status-content');
-            
+
             if (!data || data.length === 0) {
                 statusContent.innerHTML = '<div class="status-error">No monitors found</div>';
                 return;
             }
-            
+
             let html = '<div class="status-grid">';
-            
+
             // data.forEach(group => {
             //     if (group) {
             //         group.forEach(monitor => {
             //             const status = monitor.up ? 'success' : 'danger';
-                        
+
             //             html += `
             //                 <div class="status-item">
             //                     <div class="status ${status}"></div>
@@ -288,16 +314,16 @@
                         <div class="status-name">${site.site}</div>
                     </div>
                 `;
-                
+
             });
-            
+
             html += '</div>';
             statusContent.innerHTML = html;
         }
 
         // Load status data when page loads
         document.addEventListener('DOMContentLoaded', fetchStatusData);
-        
+
         // Refresh status data every 30 seconds
         setInterval(fetchStatusData, 30000);
     </script>
