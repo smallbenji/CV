@@ -156,14 +156,6 @@
                 </div>
             </div>
             <div class="half">
-                <div class="card status-card">
-                    <div class="card-header">
-                        <p><i class="bi bi-activity"></i> System Status</p>
-                    </div>
-                    <div id="status-content" class="status-loading">
-                        <i class="bi bi-arrow-clockwise"></i> Loading status...
-                    </div>
-                </div>
                 <div class="card projects">
                     <div class="card-header">
                         <p><i class="bi bi-magic"></i> Frivilligt arbejde</p>
@@ -258,74 +250,6 @@
         function toggleDropdown(id) {
             document.getElementById(id).classList.toggle("dropdown-shown");
         }
-
-        // Fetch status data from Uptime Kuma
-        async function fetchStatusData() {
-            const statusContent = document.getElementById('status-content');
-
-            try {
-                // Uptime Kuma API endpoint for monitor status
-                const response = await fetch('/api/status');
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch status data');
-                }
-
-                const data = await response.json();
-                displayStatusData(data);
-
-            } catch (error) {
-                console.error('Error fetching status data:', error);
-                statusContent.innerHTML = '<div class="status-error"><i class="bi bi-exclamation-triangle" style="padding-right: 5px;"></i> Failed to load status</div>';
-            }
-        }
-
-        function displayStatusData(data) {
-            const statusContent = document.getElementById('status-content');
-
-            if (!data || data.length === 0) {
-                statusContent.innerHTML = '<div class="status-error">No monitors found</div>';
-                return;
-            }
-
-            let html = '<div class="status-grid">';
-
-            // data.forEach(group => {
-            //     if (group) {
-            //         group.forEach(monitor => {
-            //             const status = monitor.up ? 'success' : 'danger';
-
-            //             html += `
-            //                 <div class="status-item">
-            //                     <div class="status ${status}"></div>
-            //                     <div class="status-name">${monitor.name}</div>
-            //                 </div>
-            //             `;
-            //         });
-            //     }
-            // });
-
-            data.forEach(site => {
-                const status = site.up ? 'success' : 'danger';
-
-                html += `
-                    <div class="status-item">
-                        <div class="status ${status}"></div>
-                        <div class="status-name">${site.site}</div>
-                    </div>
-                `;
-
-            });
-
-            html += '</div>';
-            statusContent.innerHTML = html;
-        }
-
-        // Load status data when page loads
-        document.addEventListener('DOMContentLoaded', fetchStatusData);
-
-        // Refresh status data every 30 seconds
-        setInterval(fetchStatusData, 30000);
     </script>
 </body>
 
